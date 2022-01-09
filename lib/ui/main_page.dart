@@ -28,16 +28,16 @@ class _MainPageState extends State<MainPage> {
             Text(
               title,
               style: blackStyle.copyWith(
-                fontSize: 18,
+                fontSize: 14,
                 fontWeight: index == selected ? semibold : medium,
               ),
             ),
             Container(
               height: 2,
-              width: 66,
+              width: 48,
               decoration: BoxDecoration(
                 color: index == selected ? kOrangeColor : kTransparentColor,
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
           ],
@@ -54,47 +54,47 @@ class _MainPageState extends State<MainPage> {
             Image.asset(
               'logo.png',
               height: 40,
-              width: 72,
+              width: 55,
             ),
             Row(
               children: [
                 const SizedBox(
-                  width: 120,
+                  width: 30,
                 ),
                 nav(
                   title: 'Guides',
                   index: 0,
                 ),
                 const SizedBox(
-                  width: 80,
+                  width: 15,
                 ),
                 nav(
                   title: 'Pricing',
                   index: 1,
                 ),
                 const SizedBox(
-                  width: 80,
+                  width: 15,
                 ),
                 nav(
                   title: 'Team',
                   index: 2,
                 ),
                 const SizedBox(
-                  width: 80,
+                  width: 15,
                 ),
                 nav(
                   title: 'Stories',
                   index: 3,
                 ),
                 const SizedBox(
-                  width: 80,
+                  width: 35,
                 ),
               ],
             ),
             Image.asset(
               'button_account.png',
               height: 53,
-              width: 163,
+              width: 120,
             ),
           ],
         ),
@@ -104,7 +104,7 @@ class _MainPageState extends State<MainPage> {
     Widget ilustrator() {
       return Container(
         margin: const EdgeInsets.only(top: 90),
-        height: 550,
+        height: 400,
         child: Image.asset('ilustrator.png'),
       );
     }
@@ -144,7 +144,7 @@ class _MainPageState extends State<MainPage> {
             'background.png',
           ),
           ListView(
-            padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
             children: [
               header(),
               ilustrator(),

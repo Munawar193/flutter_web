@@ -46,55 +46,58 @@ class _MainPageState extends State<MainPage> {
     }
 
     Widget header() {
-      return Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Image.asset(
-            'logo.png',
-            height: 40,
-            width: 72,
-          ),
-          Row(
-            children: [
-              const SizedBox(
-                width: 120,
-              ),
-              nav(
-                title: 'Guides',
-                index: 0,
-              ),
-              const SizedBox(
-                width: 80,
-              ),
-              nav(
-                title: 'Pricing',
-                index: 1,
-              ),
-              const SizedBox(
-                width: 80,
-              ),
-              nav(
-                title: 'Team',
-                index: 2,
-              ),
-              const SizedBox(
-                width: 80,
-              ),
-              nav(
-                title: 'Stories',
-                index: 3,
-              ),
-              const SizedBox(
-                width: 80,
-              ),
-            ],
-          ),
-          Image.asset(
-            'button_account.png',
-            height: 53,
-            width: 163,
-          ),
-        ],
+      return SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Image.asset(
+              'logo.png',
+              height: 40,
+              width: 72,
+            ),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 120,
+                ),
+                nav(
+                  title: 'Guides',
+                  index: 0,
+                ),
+                const SizedBox(
+                  width: 80,
+                ),
+                nav(
+                  title: 'Pricing',
+                  index: 1,
+                ),
+                const SizedBox(
+                  width: 80,
+                ),
+                nav(
+                  title: 'Team',
+                  index: 2,
+                ),
+                const SizedBox(
+                  width: 80,
+                ),
+                nav(
+                  title: 'Stories',
+                  index: 3,
+                ),
+                const SizedBox(
+                  width: 80,
+                ),
+              ],
+            ),
+            Image.asset(
+              'button_account.png',
+              height: 53,
+              width: 163,
+            ),
+          ],
+        ),
       );
     }
 

@@ -1,13 +1,17 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Color kBlackColor = const Color(0xff1D1E3C);
-Color kOrangeColor = const Color(0xffFE998D);
+Color kPrimeColor = const Color(0xff393E46);
+Color kBlackColor = const Color(0xff222831);
+Color kYelloColor = const Color(0xffFFD369);
+Color kWhiteColor = const Color(0xffEEEEEE);
 Color kTransparentColor = Colors.transparent;
 
 TextStyle blackStyle = GoogleFonts.poppins(
   color: kBlackColor,
+);
+TextStyle whiteStyle = GoogleFonts.poppins(
+  color: kWhiteColor,
 );
 
 FontWeight light = FontWeight.w300;

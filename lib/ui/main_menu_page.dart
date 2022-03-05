@@ -112,6 +112,7 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: Container(
                 height: 600,
+                width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/image.png'),
